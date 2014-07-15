@@ -55,3 +55,15 @@ If you test it on some other system, please let me know, I'll update the README 
 I have some modification to propose
 -----------------------------------
 Feel free to fork it, create pull requests and spread the love :)
+
+I want an app!
+--------------
+Well… this part will be the harder for me. In my head, the app must do the following:
+  * allow to check apps allowed to connect to Orbot (and the net)
+  * activate or deactivate LAN authorization
+  * update iptables when we update the list of authorized apps
+  * refuse to set up iptables rules if no orbot is present
+  * propose to download orbot from f-droid if not installed
+
+If you have the necessary knowledge for such an app, please feel free to create it. Really.
+On my side, I don't think I'll be able to produce one before many weeks/months, most probably with a poor quality…
