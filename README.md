@@ -3,9 +3,17 @@
 Small iptables script/rules for nexus4
 
 ## Usage
-Put the content in /dat/local/ directory. Reboot your phone. Enjoy.
+Put the content in /data/local/ directory. Reboot your phone. Enjoy.
 
-You may want to edit the "iptables" file in order to allow your favorit apps
+Via adb, this may be done like that:
+```Bash
+for i in firewall-torify.sh iptables userinit.sh; do
+  adb push $i /data/local/
+done
+adb reboot
+```
+
+You may want to edit the "iptables" file in order to allow your favorit apps.
 
 ## Requirement
 You need to have root on your phone. You also need to have a working Orbot installed,
