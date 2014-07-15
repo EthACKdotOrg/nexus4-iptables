@@ -1,0 +1,40 @@
+export IP6TABLES=/system/bin/ip6tables
+export IPTABLES=/system/bin/iptables
+get_uid() {
+  UID=$(dumpsys package $1 | grep userId | cut -d= -f2 - | cut -d' ' -f1 -)
+  echo $UID
+}
+
+
+ORBOT_UID=$(get_uid org.torproject.android)
+APG_UID=$(get_uid org.thialfihar.android.apg)
+CPAN_UID=$(get_uid com.qubling.sidekick)
+CSIP_UID=$(get_uid com.csipsimple)
+CHATSECURE_UID=$(get_uid info.guardianproject.otr.app.im)
+CBOT_UID=$(get_uid org.connectbot)
+DAVDROID_UID=$(get_uid at.bitfire.davdroid)
+DOCVIEWER_UID=$(get_uid com.android.documentsui)
+DMANAGER_UID=$(get_uid com.android.providers.downloads.ui)
+DOWNLOADS_UID=$(get_uid com.android.providers.downloads)
+DUCK_UID=$(get_uid com.duckduckgo.mobile.android)
+FDROID_UID=$(get_uid org.fdroid.fdroid)
+POCHE_UID=$(get_uid fr.gaulupeau.apps.InThePoche)
+K9_UID=$(get_uid com.fsck.k9)
+LIGHTNING_UID=$(get_uid acr.browser.lightning)
+MYHS_UID=$(get_uid ch.fixme.status)
+OSM_UID=$(get_uid net.osmand.plus)
+READPHONE_UID=$(get_uid org.thoughtcrime.redphone)
+SEAFILE_UID=$(get_uid com.seafile.seadroid2)
+TELEGRAM_UID=$(get_uid org.telegram.messenger)
+TERM_UID=$(get_uid jackpal.androidterm)
+TEXTSECURE_UID=$(get_uid org.thoughtcrime.securesms)
+THREEMA_UID=$(get_uid ch.threema.app)
+TWIDERE_UID=$(get_uid org.mariotaku.twidere)
+TWISTER_UID=$(get_uid szelok.app.twister)
+XPOSED_UID=$(get_uid de.robv.android.xposed.installer)
+
+ALL_UIDS="$APG_UID $CPAN_UID $CSIP_UID $CHATSECURE_UID $CBOT_UID $DAVDROID_UID \
+$DOCVIEWER_UID $DMANAGER_UID $DOWNLOADS_UID $DUCK_UID $FDROID_UID $POCHE_UID \
+$K9_UID $LIGHTNING_UID $MYHS_UID $OSM_UID $READPHONE_UID $SEAFILE_UID $TELEGRAM_UID \
+$TERM_UID $TEXTSECURE_UID $THREEMA_UID $TWIDERE_UID $TWISTER_UID $XPOSED_UID"
+
