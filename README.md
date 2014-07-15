@@ -34,3 +34,24 @@ All other connections will hit a wall and be dropped in order to ensure only the
 having some network connection.
 
 Small not though: for now, LAN is allowed. You may want to drop this as well, just feel free to remove the blocks.
+
+Why are you routing all through Orbot?
+--------------------------------------
+Because I'm a Torrorist.
+
+Seriously: I was abroad, on some hotel, open wifi… And I wasn't that happy knowing anyone could follow me. Nothing to hide, sure,
+but I'm not naked in the street (plus it's illegal in many places ;) ).
+
+I wasn't that happy knowing apps may connect to the Net and do stuff without my consent. OK, I'm running a non-stock Android. OK,
+I'm running only opensource apps. OK, I also have XPrivacy. But hey, we're never sure. This stuff isn't in conflict with any
+of my other usages. And it works.
+
+Nexus4 only?
+------------
+I'm pretty sure it will work on any rooted android. But for now, I have tested only on my own nexus4, running SlimKat ROM…
+
+If you test it on some other system, please let me know, I'll update the README in order to list working stuff :).
+
+I have some modification to propose
+-----------------------------------
+Feel free to fork it, create pull requests and spread the love :)
