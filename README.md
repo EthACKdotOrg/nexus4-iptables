@@ -16,7 +16,7 @@ I tried. Really. But it seems there are "some" conflicts when you try to have bo
 and Orbot managing your firewall… The latter flushes all the rules you may have set in AFWall.
 This, of course, is bad ;).
 
-But maybe the solution will be on AFWall level: a small issue has been opened: ukanth/afwall#288
+But maybe the solution will be on AFWall level: a small issue has been opened: ukanth#288
 
 ## What does this bundle?
 First, it will ensure your phone doesn't have any network at boot time. This is the part in "userinit.sh",
@@ -92,4 +92,4 @@ Well… this part will be the harder for me. In my head, the app must do the fol
 If you have the necessary knowledge for such an app, please feel free to create it. Really.
 On my side, I don't think I'll be able to produce one before many weeks/months, most probably with a poor quality…
 
-But maybe the solution will be on AFWall level: a small issue has been opened: ukanth/afwall#288
+But maybe the solution will be on AFWall level: a small issue has been opened: ukanth#288
