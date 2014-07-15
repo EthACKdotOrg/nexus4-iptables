@@ -1,27 +1,22 @@
-nexus4-iptables
-===============
+# nexus4-iptables
 
 Small iptables script/rules for nexus4
 
-Usage
------
+## Usage
 Put the content in /dat/local/ directory. Reboot your phone. Enjoy.
 
 You may want to edit the "iptables" file in order to allow your favorit apps
 
-Requirement
------------
+## Requirement
 You need to have root on your phone. You also need to have a working Orbot installed,
 and *deactivate* its transparent proxy thing.
 
-Why a flat script instead of AFWall/Orbot rules?
-------------------------------------------------
+## Why a flat script instead of AFWall/Orbot rules?
 I tried. Really. But it seems there are "some" conflicts when you try to have both AFWall
 and Orbot managing your firewall… The latter flushes all the rules you may have set in AFWall.
 This, of course, is bad ;).
 
-What does this bundle?
-----------------------
+## What does this bundle?
 First, it will ensure your phone doesn't have any network at boot time. This is the part in "userinit.sh",
 setting INPUT, OUTPUT and FORWARD chains policy to "DROP", and flushing all what may have been added.
 
@@ -63,8 +58,7 @@ Currently, the following applications are authorized:
   * szelok.app.twister
   * de.robv.android.xposed.installer
 
-Why are you routing all through Orbot?
---------------------------------------
+## Why are you routing all through Orbot?
 Because I'm a Torrorist.
 
 Seriously: I was abroad, on some hotel, open wifi… And I wasn't that happy knowing anyone could follow me. Nothing to hide, sure,
@@ -74,22 +68,18 @@ I wasn't that happy knowing apps may connect to the Net and do stuff without my 
 I'm running only opensource apps. OK, I also have XPrivacy. But hey, we're never sure. This stuff isn't in conflict with any
 of my other usages. And it works.
 
-Nexus4 only?
-------------
+## Nexus4 only?
 I'm pretty sure it will work on any rooted android. But for now, I have tested only on my own nexus4, running SlimKat ROM…
 
 If you test it on some other system, please let me know, I'll update the README in order to list working stuff :).
 
-Supported devices
-.................
+### Supported devices
   * Samsung S3 (thanks Alexis R)
 
-I have some modification to propose
------------------------------------
+## I have some modification to propose
 Feel free to fork it, create pull requests and spread the love :)
 
-I want an app!
---------------
+## I want an app!
 Well… this part will be the harder for me. In my head, the app must do the following:
   * allow to check apps allowed to connect to Orbot (and the net)
   * activate or deactivate LAN authorization
