@@ -35,6 +35,34 @@ having some network connection.
 
 Small not though: for now, LAN is allowed. You may want to drop this as well, just feel free to remove the blocks.
 
+Currently, the following applications are authorized:
+  * org.torproject.android
+  * org.thialfihar.android.apg
+  * com.qubling.sidekick
+  * com.csipsimple
+  * info.guardianproject.otr.app.im
+  * org.connectbot
+  * at.bitfire.davdroid
+  * com.android.documentsui
+  * com.android.providers.downloads.ui
+  * com.android.providers.downloads
+  * com.duckduckgo.mobile.android
+  * org.fdroid.fdroid
+  * fr.gaulupeau.apps.InThePoche
+  * com.fsck.k9
+  * acr.browser.lightning
+  * ch.fixme.status
+  * net.osmand.plus
+  * org.thoughtcrime.redphone
+  * com.seafile.seadroid2
+  * org.telegram.messenger
+  * jackpal.androidterm
+  * org.thoughtcrime.securesms
+  * ch.threema.app
+  * org.mariotaku.twidere
+  * szelok.app.twister
+  * de.robv.android.xposed.installer
+
 Why are you routing all through Orbot?
 --------------------------------------
 Because I'm a Torrorist.
@@ -51,6 +79,10 @@ Nexus4 only?
 I'm pretty sure it will work on any rooted android. But for now, I have tested only on my own nexus4, running SlimKat ROM…
 
 If you test it on some other system, please let me know, I'll update the README in order to list working stuff :).
+
+Supported devices
+.................
+  * Samsung S3 (thanks Alexis R)
 
 I have some modification to propose
 -----------------------------------
