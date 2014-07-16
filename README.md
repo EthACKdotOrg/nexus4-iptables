@@ -7,13 +7,13 @@ Put the content in /data/local/ directory. Reboot your phone. Enjoy.
 
 Via adb, this may be done like that:
 ```Bash
-for i in firewall-torify.sh iptables userinit.sh; do
+for i in firewall-torify.sh applist userinit.sh; do
   adb push $i /data/local/
 done
 adb reboot
 ```
 
-You may want to edit the "iptables" file in order to allow your favorit apps.
+You may want to edit the "applist" file in order to allow your favorit apps.
 
 ## Requirement
 You need to have root on your phone. You also need to have a working Orbot installed,
@@ -31,7 +31,7 @@ First, it will ensure your phone doesn't have any network at boot time. This is 
 setting INPUT, OUTPUT and FORWARD chains policy to "DROP", and flushing all what may have been added.
 
 Once it's done, it will fork a second script. This one will wait 30 seconds before being really called.
-It will then do some magic with NAT table, forcing requests for each app you defined in "iptables" file
+It will then do some magic with NAT table, forcing requests for each app you defined in "applist" file
 to go through Orbot TransProxy (default port: 9040).
 It will also force DNS queries through Orbot DNS Listened (default: 5400)
 
