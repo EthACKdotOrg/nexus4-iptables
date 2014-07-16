@@ -1,5 +1,7 @@
 . /data/local/applist
 
+# allow Orbot output directly - no loop please ;)
+$IPTABLES -t nat -I OUTPUT 1 -m owner --uid-owner $ORBOT_UID -j RETURN -m comment --comment "Allow Orbot output"
 # redirect traffic for our friendly apps to TransPort
 for uid in $ALL_UIDS; do
   uid=$(echo $app | cut -d '=' -f 2)
@@ -9,7 +11,7 @@ done
 # drop all unwanted output. because we can and we care :).
 $IPTABLES -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-# allow orbot output ? ???yes, that's what we really want :).
+# allow orbot output? Yes, that's what we really want :).
 $IPTABLES -A OUTPUT -m owner --uid-owner $ORBOT_UID -j ACCEPT -m comment --comment "Allow Orbot output"
 
 # Accept DNS requests to the Tor DNSPort.
