@@ -1,4 +1,4 @@
-. /data/local/iptables
+. /data/local/applist
 
 $IPTABLES -F INPUT
 $IPTABLES -F OUTPUT

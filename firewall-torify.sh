@@ -1,4 +1,4 @@
-. /data/local/iptables
+. /data/local/applist
 
 # redirect traffic for our friendly apps to TransPort
 for uid in $ALL_UIDS; do
